@@ -5,13 +5,19 @@ VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker", "NetworkChecker\NetworkChecker.csproj", "{134553A4-12A0-4716-9AB2-DA32D4342BBE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.CsvWorkerService", "..\CsvWorkerService\NetworkChecker.CsvWorkerService.csproj", "{94B378EC-BD81-48EA-8470-BD40C1DF111D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.DomainModels", "NetworkChecker.DomainModels\NetworkChecker.DomainModels.csproj", "{4D899559-078A-4F2E-BA3E-1C92E4FE0489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.DomainModels", "NetworkChecker.DomainModels\NetworkChecker.DomainModels.csproj", "{4D899559-078A-4F2E-BA3E-1C92E4FE0489}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.CsvWorkerService.Tests", "Tests\NetworkChecker.CsvWorkerService.Tests\NetworkChecker.CsvWorkerService.Tests.csproj", "{556C3047-15CE-4C12-9D01-FE4E77397C75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.CsvWorkerService.Tests", "Tests\NetworkChecker.CsvWorkerService.Tests\NetworkChecker.CsvWorkerService.Tests.csproj", "{556C3047-15CE-4C12-9D01-FE4E77397C75}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.CsvWorkerService", "NetworkChecker.CsvWorkerService\NetworkChecker.CsvWorkerService.csproj", "{293C92ED-178F-4B6D-B460-58DAEF0B43A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.GraphCreator", "NetworkChecker.GraphCreator\NetworkChecker.GraphCreator.csproj", "{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.GraphCreator.Tests", "Tests\NetworkChecker.GraphCreator.Tests\NetworkChecker.GraphCreator.Tests.csproj", "{EB3D443F-98F2-4AB3-8A10-73302F2000F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.DomainModels.Tests", "Tests\NetworkChecker.DomainModels.Tests\NetworkChecker.DomainModels.Tests.csproj", "{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +29,6 @@ Global
 		{134553A4-12A0-4716-9AB2-DA32D4342BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{134553A4-12A0-4716-9AB2-DA32D4342BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{134553A4-12A0-4716-9AB2-DA32D4342BBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94B378EC-BD81-48EA-8470-BD40C1DF111D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94B378EC-BD81-48EA-8470-BD40C1DF111D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94B378EC-BD81-48EA-8470-BD40C1DF111D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94B378EC-BD81-48EA-8470-BD40C1DF111D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D899559-078A-4F2E-BA3E-1C92E4FE0489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D899559-078A-4F2E-BA3E-1C92E4FE0489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D899559-078A-4F2E-BA3E-1C92E4FE0489}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,12 +37,30 @@ Global
 		{556C3047-15CE-4C12-9D01-FE4E77397C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{556C3047-15CE-4C12-9D01-FE4E77397C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{556C3047-15CE-4C12-9D01-FE4E77397C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293C92ED-178F-4B6D-B460-58DAEF0B43A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293C92ED-178F-4B6D-B460-58DAEF0B43A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293C92ED-178F-4B6D-B460-58DAEF0B43A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293C92ED-178F-4B6D-B460-58DAEF0B43A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{556C3047-15CE-4C12-9D01-FE4E77397C75} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
+		{EB3D443F-98F2-4AB3-8A10-73302F2000F7} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
+		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB8B8B26-9AB9-438A-8258-205E449BF587}

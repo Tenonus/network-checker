@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CsvWorkerService\NetworkChecker.CsvWorkerService.csproj" />
+    <ProjectReference Include="..\..\NetworkChecker.CsvWorkerService\NetworkChecker.CsvWorkerService.csproj" />
     <ProjectReference Include="..\..\NetworkChecker.DomainModels\NetworkChecker.DomainModels.csproj" />
   </ItemGroup>
 
