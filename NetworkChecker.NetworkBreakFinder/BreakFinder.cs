@@ -8,6 +8,57 @@ namespace NetworkChecker.NetworkBreakFinder
 {
     public class BreakFinder
     {
+        private List<string> _stack = new List<string>();
+        private List<string> _usedNodes = new List<string>();
+
+        public bool FindBreaks(IEnumerable<Node> nodes)
+        {
+            var node = nodes.FirstOrDefault().Node1Id;
+            while (node != null)
+            {
+                node = GetNextStep(node, nodes);
+                if (node != null)
+                {
+                    _usedNodes.Add(node);
+                    _stack.Add(node);
+                }
+                else
+                {
+                    node = nodes.FirstOrDefault(x => x.Node1Id == _stack.LastOrDefault())?.Node1Id;
+                    if (!string.IsNullOrWhiteSpace(node)) _stack.Remove(node);
+                }
+            }
+
+            var un = GetUniqueNodeIds(nodes);
+            var list = un.Except(_usedNodes);
+            var isAgain = true;
+            while (isAgain)
+            {
+                var r = nodes.Where(x => list.Contains(x.Node1Id) || list.Contains(x.Node2Id));
+                var qwe = r.Where(a => _usedNodes.Contains(a.Node1Id)).Select(s => s.Node2Id);
+                var qwe1 = r.Where(a => _usedNodes.Contains(a.Node2Id)).Select(s => s.Node1Id);
+                _usedNodes.AddRange(qwe);
+                _usedNodes.AddRange(qwe1);
+                isAgain = qwe.Any() || qwe1.Any();
+            }
+            list = un.Except(_usedNodes);
+            var res = list.Any();
+            return res;
+        }
+
+        private IEnumerable<string> GetUniqueNodeIds(IEnumerable<Node> nodes)
+        {
+            var allNodes = nodes.Select(s => s.Node1Id).Union(nodes.Select(s => s.Node2Id));
+            return allNodes.Distinct();
+        }
+
+        private string GetNextStep(string id, IEnumerable<Node> nodes)
+        {
+            var relativeNodes = nodes.Where(x => x.Node1Id == id && !_usedNodes.Contains(x.Node2Id));
+            var result = relativeNodes.FirstOrDefault();
+            return result?.Node2Id;
+        }
+
         public bool FindBreakByNodeId(IEnumerable<Node> nodes)
         {
             var idsEnumerable = GetIdsEnumerable(nodes);

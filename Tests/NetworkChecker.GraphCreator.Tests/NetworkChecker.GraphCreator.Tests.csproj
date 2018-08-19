@@ -14,4 +14,9 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\NetworkChecker.DomainModels\NetworkChecker.DomainModels.csproj" />
+    <ProjectReference Include="..\..\NetworkChecker.GraphCreator\NetworkChecker.GraphCreator.csproj" />
+  </ItemGroup>
+
 </Project>
