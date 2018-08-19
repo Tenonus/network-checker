@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.GraphCreator
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.GraphCreator.Tests", "Tests\NetworkChecker.GraphCreator.Tests\NetworkChecker.GraphCreator.Tests.csproj", "{EB3D443F-98F2-4AB3-8A10-73302F2000F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.DomainModels.Tests", "Tests\NetworkChecker.DomainModels.Tests\NetworkChecker.DomainModels.Tests.csproj", "{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.DomainModels.Tests", "Tests\NetworkChecker.DomainModels.Tests\NetworkChecker.DomainModels.Tests.csproj", "{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.NetworkBreakFinder", "NetworkChecker.NetworkBreakFinder\NetworkChecker.NetworkBreakFinder.csproj", "{B0A8449D-282B-487B-8DD6-9683142FCA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.NetworkBreakFinder.Tests", "Tests\NetworkChecker.NetworkBreakFinder.Tests\NetworkChecker.NetworkBreakFinder.Tests.csproj", "{F2431337-A3CF-45FF-B7B0-9A37082CF62C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A8449D-282B-487B-8DD6-9683142FCA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A8449D-282B-487B-8DD6-9683142FCA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A8449D-282B-487B-8DD6-9683142FCA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A8449D-282B-487B-8DD6-9683142FCA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2431337-A3CF-45FF-B7B0-9A37082CF62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2431337-A3CF-45FF-B7B0-9A37082CF62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2431337-A3CF-45FF-B7B0-9A37082CF62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2431337-A3CF-45FF-B7B0-9A37082CF62C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +73,7 @@ Global
 		{556C3047-15CE-4C12-9D01-FE4E77397C75} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 		{EB3D443F-98F2-4AB3-8A10-73302F2000F7} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
+		{F2431337-A3CF-45FF-B7B0-9A37082CF62C} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB8B8B26-9AB9-438A-8258-205E449BF587}
