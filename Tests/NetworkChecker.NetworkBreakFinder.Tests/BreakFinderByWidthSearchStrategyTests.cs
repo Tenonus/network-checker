@@ -6,15 +6,15 @@ using NUnit.Framework;
 namespace NetworkChecker.NetworkBreakFinder.Tests
 {
     [TestFixture]
-    public class NetworkBreakFinderTests
+    public class BreakFinderByWidthSearchStrategyTests
     {
         private List<Node> _nodesWhichHaventBreaks;
-        private NetworkBreakFinder _breakFinder;
+        private BreakFinderByWidthSearchStrategy _breakFinderByWidthSearchStrategy;
 
         [SetUp]
         public void SetUp()
         {
-            _breakFinder = new NetworkBreakFinder();
+            _breakFinderByWidthSearchStrategy = new BreakFinderByWidthSearchStrategy();
             _nodesWhichHaventBreaks = new List<Node>
             {
                 new Node {Node1Id = "Node1", Node2Id = "Node2"},
@@ -30,7 +30,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(_nodesWhichHaventBreaks);
 
             // Act
-            var result = _breakFinder.FindBreaks(graph);
+            var result = _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.IsFalse(result);
@@ -45,7 +45,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            var result = _breakFinder.FindBreaks(graph);
+            var result = _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.IsFalse(result);
@@ -65,7 +65,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            var result = _breakFinder.FindBreaks(graph);
+            var result = _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.IsFalse(result);
@@ -89,7 +89,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            var result = _breakFinder.FindBreaks(graph);
+            var result = _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.IsFalse(result);
@@ -104,7 +104,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            var result = _breakFinder.FindBreaks(graph);
+            var result = _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.IsTrue(result);
@@ -119,7 +119,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            var result = _breakFinder.FindBreaks(graph);
+            var result = _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.IsTrue(result);
@@ -145,7 +145,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            var result = _breakFinder.FindBreaks(graph);
+            var result = _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.IsTrue(result);
@@ -159,7 +159,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            Func<bool> result = () => _breakFinder.FindBreaks(graph);
+            Func<bool> result = () => _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.Throws<ArgumentNullException>(() => result.Invoke());
@@ -173,7 +173,7 @@ namespace NetworkChecker.NetworkBreakFinder.Tests
             var graph = new Graph(nodesList);
 
             // Act
-            Func<bool> result = () => _breakFinder.FindBreaks(graph);
+            Func<bool> result = () => _breakFinderByWidthSearchStrategy.FindBreaks(graph);
 
             // Assert
             Assert.Throws<ArgumentNullException>(() => result.Invoke());

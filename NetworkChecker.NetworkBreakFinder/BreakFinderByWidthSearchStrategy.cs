@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using NetworkChecker.BreakFinderStrategyAbstraction;
 using NetworkChecker.DomainModels;
 
 namespace NetworkChecker.NetworkBreakFinder
@@ -8,7 +9,7 @@ namespace NetworkChecker.NetworkBreakFinder
     /// <summary>
     /// Объект для поиска разрывов сети
     /// </summary>
-    public class NetworkBreakFinder
+    public class BreakFinderByWidthSearchStrategy : IBreakFinderStrategy
     {
         /// <summary>
         /// Стэк проходов по графу

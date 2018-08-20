@@ -5,4 +5,13 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NetworkChecker.BreakFinderStrategyAbstraction\NetworkChecker.BreakFinderStrategyAbstraction.csproj" />
+    <ProjectReference Include="..\NetworkChecker.Configurations\NetworkChecker.Configurations.csproj" />
+    <ProjectReference Include="..\NetworkChecker.CsvWorkerService\NetworkChecker.CsvWorkerService.csproj" />
+    <ProjectReference Include="..\NetworkChecker.GraphBuilderAbstraction\NetworkChecker.GraphBuilderAbstraction.csproj" />
+    <ProjectReference Include="..\NetworkChecker.NetworkBreakFinder\NetworkChecker.NetworkBreakFinder.csproj" />
+    <ProjectReference Include="..\NetworkChecker.NetworkMonitor\NetworkChecker.NetworkMonitor.csproj" />
+  </ItemGroup>
+
 </Project>

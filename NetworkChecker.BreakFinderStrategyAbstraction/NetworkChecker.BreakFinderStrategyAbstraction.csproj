@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetworkChecker.BreakFinderStrategyAbstraction\NetworkChecker.BreakFinderStrategyAbstraction.csproj" />
     <ProjectReference Include="..\NetworkChecker.DomainModels\NetworkChecker.DomainModels.csproj" />
   </ItemGroup>
 
