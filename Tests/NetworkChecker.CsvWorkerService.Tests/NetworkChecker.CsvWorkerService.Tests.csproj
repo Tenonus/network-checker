@@ -14,14 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\NetworkChecker.Configurations\NetworkChecker.Configurations.csproj" />
     <ProjectReference Include="..\..\NetworkChecker.CsvWorkerService\NetworkChecker.CsvWorkerService.csproj" />
     <ProjectReference Include="..\..\NetworkChecker.DomainModels\NetworkChecker.DomainModels.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Nodes_3.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="Nodes_Except_SecondField.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -31,7 +29,7 @@
     <None Update="Nodes_Not_Valid.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Nodes_3.csq">
+    <None Update="Nodes_3.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Nodes_Without_Headers.csv">
