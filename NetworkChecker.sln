@@ -17,6 +17,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.NetworkBreak
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.NetworkBreakFinder.Tests", "Tests\NetworkChecker.NetworkBreakFinder.Tests\NetworkChecker.NetworkBreakFinder.Tests.csproj", "{F2431337-A3CF-45FF-B7B0-9A37082CF62C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.NetworkMonitor", "NetworkChecker.NetworkMonitor\NetworkChecker.NetworkMonitor.csproj", "{0AF0AF53-CC18-47F9-9872-17838F4C2E62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.NetworkMonitor.Tests", "Tests\NetworkChecker.NetworkMonitor.Tests\NetworkChecker.NetworkMonitor.Tests.csproj", "{E7958EE1-7DFE-4069-8869-1F59C0294409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.GraphBuilderAbstraction", "NetworkChecker.GraphBuilderAbstraction\NetworkChecker.GraphBuilderAbstraction.csproj", "{E1FFBD5E-7E24-45B9-A2B5-7441BAFEFEA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.BreakFinderStrategyAbstraction", "NetworkChecker.BreakFinderStrategyAbstraction\NetworkChecker.BreakFinderStrategyAbstraction.csproj", "{AFE646CE-FF5B-4BAA-A1A2-FAD033F32367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.Configurations", "NetworkChecker.Configurations\NetworkChecker.Configurations.csproj", "{71F92D2C-F0BB-4771-AA89-62AF390E8D44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +57,26 @@ Global
 		{F2431337-A3CF-45FF-B7B0-9A37082CF62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2431337-A3CF-45FF-B7B0-9A37082CF62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2431337-A3CF-45FF-B7B0-9A37082CF62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF0AF53-CC18-47F9-9872-17838F4C2E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF0AF53-CC18-47F9-9872-17838F4C2E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF0AF53-CC18-47F9-9872-17838F4C2E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF0AF53-CC18-47F9-9872-17838F4C2E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7958EE1-7DFE-4069-8869-1F59C0294409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7958EE1-7DFE-4069-8869-1F59C0294409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7958EE1-7DFE-4069-8869-1F59C0294409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7958EE1-7DFE-4069-8869-1F59C0294409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1FFBD5E-7E24-45B9-A2B5-7441BAFEFEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FFBD5E-7E24-45B9-A2B5-7441BAFEFEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FFBD5E-7E24-45B9-A2B5-7441BAFEFEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FFBD5E-7E24-45B9-A2B5-7441BAFEFEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE646CE-FF5B-4BAA-A1A2-FAD033F32367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE646CE-FF5B-4BAA-A1A2-FAD033F32367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE646CE-FF5B-4BAA-A1A2-FAD033F32367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE646CE-FF5B-4BAA-A1A2-FAD033F32367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F92D2C-F0BB-4771-AA89-62AF390E8D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F92D2C-F0BB-4771-AA89-62AF390E8D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F92D2C-F0BB-4771-AA89-62AF390E8D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F92D2C-F0BB-4771-AA89-62AF390E8D44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +84,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{556C3047-15CE-4C12-9D01-FE4E77397C75} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 		{F2431337-A3CF-45FF-B7B0-9A37082CF62C} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
+		{E7958EE1-7DFE-4069-8869-1F59C0294409} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB8B8B26-9AB9-438A-8258-205E449BF587}

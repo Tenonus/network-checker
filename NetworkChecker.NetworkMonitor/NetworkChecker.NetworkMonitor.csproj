@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CsvHelper" Version="7.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\NetworkChecker.Configurations\NetworkChecker.Configurations.csproj" />
+    <ProjectReference Include="..\NetworkChecker.BreakFinderStrategyAbstraction\NetworkChecker.BreakFinderStrategyAbstraction.csproj" />
     <ProjectReference Include="..\NetworkChecker.DomainModels\NetworkChecker.DomainModels.csproj" />
     <ProjectReference Include="..\NetworkChecker.GraphBuilderAbstraction\NetworkChecker.GraphBuilderAbstraction.csproj" />
   </ItemGroup>
