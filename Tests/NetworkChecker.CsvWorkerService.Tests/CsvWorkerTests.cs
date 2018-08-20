@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using NetworkChecker.CsvWorkerService.Exceptions;
@@ -26,8 +25,8 @@ namespace NetworkChecker.CsvWorkerService.Tests
             var fileName = "Nodes_3.csv";
 
             // Act
-            var nodes = _csv.GetNodes(fileName);
-            var count = nodes.Count();
+            var graph = _csv.GetNodes(fileName);
+            var count = graph.Nodes.Count();
 
             // Assert
             Assert.AreEqual(count, 3);
@@ -40,7 +39,7 @@ namespace NetworkChecker.CsvWorkerService.Tests
             var fileName = "Nodes_NotExists.csv";
 
             // Act
-            Func<IEnumerable<Node>> result = () => _csv.GetNodes(fileName);
+            Func<Graph> result = () => _csv.GetNodes(fileName);
 
             // Assert
             Assert.Throws<FileNotFoundException>(() => result.Invoke());
@@ -54,7 +53,7 @@ namespace NetworkChecker.CsvWorkerService.Tests
             var fileName = name;
 
             // Act
-            Func<IEnumerable<Node>> result = () => _csv.GetNodes(fileName);
+            Func<Graph> result = () => _csv.GetNodes(fileName);
             
             // Assert
             Assert.Throws<CsvMapperException>(() => result.Invoke());
