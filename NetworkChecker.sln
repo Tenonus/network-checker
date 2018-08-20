@@ -13,15 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.CsvWorkerSer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.CsvWorkerService", "NetworkChecker.CsvWorkerService\NetworkChecker.CsvWorkerService.csproj", "{293C92ED-178F-4B6D-B460-58DAEF0B43A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.GraphCreator", "NetworkChecker.GraphCreator\NetworkChecker.GraphCreator.csproj", "{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.NetworkBreakFinder", "NetworkChecker.NetworkBreakFinder\NetworkChecker.NetworkBreakFinder.csproj", "{B0A8449D-282B-487B-8DD6-9683142FCA53}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.GraphCreator.Tests", "Tests\NetworkChecker.GraphCreator.Tests\NetworkChecker.GraphCreator.Tests.csproj", "{EB3D443F-98F2-4AB3-8A10-73302F2000F7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.DomainModels.Tests", "Tests\NetworkChecker.DomainModels.Tests\NetworkChecker.DomainModels.Tests.csproj", "{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.NetworkBreakFinder", "NetworkChecker.NetworkBreakFinder\NetworkChecker.NetworkBreakFinder.csproj", "{B0A8449D-282B-487B-8DD6-9683142FCA53}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkChecker.NetworkBreakFinder.Tests", "Tests\NetworkChecker.NetworkBreakFinder.Tests\NetworkChecker.NetworkBreakFinder.Tests.csproj", "{F2431337-A3CF-45FF-B7B0-9A37082CF62C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkChecker.NetworkBreakFinder.Tests", "Tests\NetworkChecker.NetworkBreakFinder.Tests\NetworkChecker.NetworkBreakFinder.Tests.csproj", "{F2431337-A3CF-45FF-B7B0-9A37082CF62C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,18 +39,6 @@ Global
 		{293C92ED-178F-4B6D-B460-58DAEF0B43A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{293C92ED-178F-4B6D-B460-58DAEF0B43A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{293C92ED-178F-4B6D-B460-58DAEF0B43A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25DF25BF-97E2-4EF5-9C6C-627CB56FE8EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB3D443F-98F2-4AB3-8A10-73302F2000F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0A8449D-282B-487B-8DD6-9683142FCA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0A8449D-282B-487B-8DD6-9683142FCA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A8449D-282B-487B-8DD6-9683142FCA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,8 +53,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{556C3047-15CE-4C12-9D01-FE4E77397C75} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
-		{EB3D443F-98F2-4AB3-8A10-73302F2000F7} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
-		{68A4CBC6-DAEC-44C0-B95B-1ACB6B88A895} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 		{F2431337-A3CF-45FF-B7B0-9A37082CF62C} = {84BFCF01-5FEF-4646-80F0-8CF11A23FD3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

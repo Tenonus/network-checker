@@ -19,7 +19,7 @@ namespace NetworkChecker.CsvWorkerService
         /// </summary>
         /// <param name="fileName">Имя файла</param>
         /// <returns>Коллекция узлов</returns>
-        public IEnumerable<Node> GetNodes(string fileName)
+        public Graph GetNodes(string fileName)
         {
             var name = !string.IsNullOrWhiteSpace(fileName)
                 ? fileName
@@ -27,7 +27,8 @@ namespace NetworkChecker.CsvWorkerService
             var path = Path.Combine(Environment.CurrentDirectory, name);
             try
             {
-                return ParseCsv(path);
+                var nodes = ParseCsv(path);
+                return new Graph(nodes);
             }
             catch (CsvHelper.MissingFieldException e)
             {
